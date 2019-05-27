@@ -1,0 +1,31 @@
+.all_current_orders {
+    /* width: 100%; */
+    table-layout: fixed;
+    font-size: 1.8rem;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+tr {
+    padding: 5px;
+}
+
+tr:nth-child(odd) {
+    border: 1px solid rgb(219, 219, 219);
+    background-color: rgb(255, 187, 0);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(237, 240, 248);
+}
+
+.selection {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 5px;
+}
