@@ -1,0 +1,6 @@
+# so we will not need 'public' in the url
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ views/ [L]
+    RewriteRule ^(.*) views/$1 [L]
+</IfModule>

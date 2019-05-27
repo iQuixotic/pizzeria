@@ -1,7 +1,6 @@
 <?php 
-    include './php/connection.php';
-    include './php/functionsAndVariables.php';
-    include './php/switchPrice.php';
+    include '../config/connection.php';
+    include 'inc/functionsAndVariables.php';
 ?>
     <!DOCTYPE html>
 <html>
@@ -10,26 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Peep's Pizzeria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="views/assets/css/base.css" <?php  echo time(); ?> />   
-    <link rel="stylesheet" href="views/assets/css/main.css" <?php  echo time(); ?> />   
-    <link rel="stylesheet" href="views/assets/css/layout.css"  <?php  echo time(); ?> />  
-    <link rel="stylesheet" href="views/assets/css/tables.css"  <?php  echo time(); ?> />   
-    <link rel="stylesheet" href="views/assets/css/nav.css"  <?php  echo time(); ?> />   
+    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/base.css" <?php  echo time(); ?> />   
+    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/main.css" <?php  echo time(); ?> />   
+    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/layout.css"  <?php  echo time(); ?> />  
+    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/tables.css"  <?php  echo time(); ?> />   
+    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/nav.css"  <?php  echo time(); ?> />   
 
 </head>
 <body>
 
 <nav>
     <div class="logo"></div>
-    <h1 class="peeps"><em>Peep's Pizzeria</em></h1>
+    <h1 class="peeps"><em>Peep's Pizzeriafffff</em></h1>
     <div class="nav_links-all">
         <div class="nav_left-links">
-            <a  href="/php_pizza_crud/php/delivery.php" class=<?php echo $_SERVER['REQUEST_URI'] == "/php_pizza_crud/php/delivery.php" ? 'active' : ''; ?>>Deliveries</a>
+            <a  href="/pizzeria/pgs/delivery.php" class=<?php echo $_SERVER['REQUEST_URI'] == "/pizzeria/pgs/delivery.php" ? 'active' : ''; ?>>Deliveries</a>
         </div>
         <div class="nav_links">
-            <a href="/php_pizza_crud" class=<?php echo $_SERVER['REQUEST_URI'] == "/php_pizza_crud/" ? 'active' : ''; ?> 
+            <a href="/pizzeria" class=<?php echo $_SERVER['REQUEST_URI'] == "/php_pizza_crud/" ? 'active' : ''; ?> 
             >Home</a>
-            <a href="/php_pizza_crud/php/custom.php" class=<?php echo $_SERVER['REQUEST_URI'] == "/php_pizza_crud/php/custom.php" ? 'active' : ''; ?> >Customize</a>
+            <a href="/pizzeria/pgs/custom.php" class=<?php echo $_SERVER['REQUEST_URI'] == "/pizzeria/pgs/custom.php" ? 'active' : ''; ?> >Customize</a>
         </div>
     </div>
 </nav>
@@ -54,7 +53,7 @@
             get_image($src);
             echo "<br>";
         }  else {
-            get_image('views/assets/img/pepperoniPizza.jpg');
+            get_image('public/img/pepperoniPizza.jpg');
         }
     ?>
     <div class="choice-form">
