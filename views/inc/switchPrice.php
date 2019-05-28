@@ -1,10 +1,6 @@
 <?php
 
-// echo 'hellog';
 $price=5;
-// global $size;
-
-
 
 if (isset( $_POST["size"])) {
     $size = $_POST["size"];
@@ -32,7 +28,6 @@ if (isset($_POST["size"])) {
 } else {
     echo 'not yet';
 }
-
 
 function priceAdjust($arg) {
     global $size;

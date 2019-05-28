@@ -23,5 +23,11 @@ CREATE TABLE orders(
   size VARCHAR(200) NOT NULL,
   price VARCHAR(200) NOT NULL
 );
+-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-INSERT INTO menu('pizza_name', 'topping') VALUES('Mushroom', 'Mushrooms')
+
+INSERT INTO `menu`(`pizza_name`, `toppings`) VALUES ('Pepperoni', 'All them pepperonis');
+INSERT INTO `menu`(`pizza_name`, `toppings`) VALUES ('Hawaiian', 'pineapple, ham, pepperoni');
+INSERT INTO `menu`(`pizza_name`, `toppings`) VALUES ('Supreme', 'All the toppings!!');
+INSERT INTO `menu`(`pizza_name`, `toppings`) VALUES ('Spinach Provalone', 'tomatoes, provalone, spinach');
+INSERT INTO `menu`(`pizza_name`, `toppings`) VALUES ('Shruums', 'mushrooms, provalone');

@@ -1,6 +1,5 @@
 <?php include '../inc/header.php'; ?>
-
-
+<?php  include '../../config/connection.php'; ?>
 
 <div class="my-head-space"></div>
 

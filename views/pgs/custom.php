@@ -1,6 +1,12 @@
 
 <?php include '../inc/header.php'; ?>
+<?php  include '../../config/connection.php'; ?>
 
+
+<?php include '../inc/functionsAndVariables.php'; ?>
+<?php include '../inc/switchPrice.php'; ?>
+<?php include '../inc/formSubmit.php'; ?>
+<?php  include '../../queries/postOrders.php'; ?>
 
 <div class="my-head-space"></div>
 
