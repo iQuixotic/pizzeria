@@ -2,5 +2,5 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteRule ^$ views/ [L]
-    RewriteRule ^(.*) views/$1 [L]
+    # RewriteRule ^(.*) views/$1 [L]
 </IfModule>

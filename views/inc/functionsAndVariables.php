@@ -5,7 +5,7 @@ $price_by_size = 0;
 $j=0;
 $customer= isset($_POST["customer"]) ? $_POST["customer"] : '';
 $toppingsArr=array();
-$pizza_img = array(0 => '../public/img/pepperoniPizza.jpg', 
+$pizza_img = array(0 => 'public/img/pepperoniPizza.jpg', 
    1 => 'public/img/hawPizza.jpg', 2 => 'public/img/supremePizza.jpg',
    3 => 'public/img/pizzat.jpg', 4 => 'public/img/mushroomPizza.jpg'  
     );

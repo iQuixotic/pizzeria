@@ -1,37 +1,10 @@
-<?php 
-    include '../config/connection.php';
-    include 'inc/functionsAndVariables.php';
-?>
-    <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Peep's Pizzeria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/base.css" <?php  echo time(); ?> />   
-    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/main.css" <?php  echo time(); ?> />   
-    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/layout.css"  <?php  echo time(); ?> />  
-    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/tables.css"  <?php  echo time(); ?> />   
-    <link rel="stylesheet" href="http://localhost/pizzeria/public/css/nav.css"  <?php  echo time(); ?> />   
 
-</head>
-<body>
+<?php  include '../config/connection.php'; ?>
+<?php include 'inc/functionsAndVariables.php'; ?>
+<?php include 'inc/switchPrice.php'; ?>
+<?php include 'inc/header.php';?>
 
-<nav>
-    <div class="logo"></div>
-    <h1 class="peeps"><em>Peep's Pizzeriafffff</em></h1>
-    <div class="nav_links-all">
-        <div class="nav_left-links">
-            <a  href="/pizzeria/pgs/delivery.php" class=<?php echo $_SERVER['REQUEST_URI'] == "/pizzeria/pgs/delivery.php" ? 'active' : ''; ?>>Deliveries</a>
-        </div>
-        <div class="nav_links">
-            <a href="/pizzeria" class=<?php echo $_SERVER['REQUEST_URI'] == "/php_pizza_crud/" ? 'active' : ''; ?> 
-            >Home</a>
-            <a href="/pizzeria/pgs/custom.php" class=<?php echo $_SERVER['REQUEST_URI'] == "/pizzeria/pgs/custom.php" ? 'active' : ''; ?> >Customize</a>
-        </div>
-    </div>
-</nav>
+
 
 <div class="my-head-space"></div>
     <div class="center marg-bottom padding">
