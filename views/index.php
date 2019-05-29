@@ -1,5 +1,6 @@
 
-<?php  include '../config/connection.php'; ?>
+<?php 
+//  include '../config/connection.php'; ?>
 <?php include 'inc/functionsAndVariables.php'; ?>
 <?php include 'inc/switchPrice.php'; ?>
 <?php include 'inc/header.php';?>
